@@ -18,7 +18,7 @@ class Train {
     t->prev = nullptr;
     t->light = light;
     return t;
-} 
+  }
  public:
   Train();
   void addCage(bool light); // добавить вагон с начальным состоянием лампочки
