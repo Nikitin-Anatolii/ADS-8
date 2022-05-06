@@ -29,14 +29,14 @@ int Train::getOpCount() {
 }
 void Train::addCage(bool light) {
   if (first && last) {
-    last->next = add(last);
+    last->next = add(light);
     last->next->prev = last;
     last = last->next;
-    if (!first->next) {
-      first->prev = last;
-    }
-    if (!last->prev) {
+    if (!last->next) {
       last->next = first;
+    }
+    if (!first->prev) {
+      first->prev = last;
     }
   } else {
     first = add(light);
