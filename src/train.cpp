@@ -30,7 +30,6 @@ int Train::getOpCount() {
 void Train::addCage(bool light) {
   if (first && last) {
     last->next = add(last);
-    last->next = add(light);
     last->next->prev = last;
     last = last->next;
     if (!first->next) {
