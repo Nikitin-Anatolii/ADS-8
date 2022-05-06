@@ -1,5 +1,6 @@
 // Copyright 2021 NNTU-CS
 #include "train.h"
+Train::Train() {}
 int Train::getLength() {
   int w = 0, i = 0;
   first->light = true;
