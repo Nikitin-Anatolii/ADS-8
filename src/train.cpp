@@ -11,7 +11,7 @@ int Train::getLength() {
     if (t->light) {
       w = i;
       t->light = false;
-      int j = --i;
+      int j = i;
       for (j; j >= 0; --j) {
         t = t->prev;
         ++countOp;
